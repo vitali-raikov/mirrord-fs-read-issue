@@ -1,0 +1,19 @@
+{
+  "accept_invalid_certificates": true,
+  "target": {
+      "path": {
+          "deployment": "nginx"
+      },
+      "namespace": "default"
+    },
+  "feature": {
+      "network": {
+          "incoming": "mirror",
+          "outgoing": true
+      },
+      "fs": {
+          "read_only": ["/etc.*"]
+      },
+      "env": true
+  }
+}
