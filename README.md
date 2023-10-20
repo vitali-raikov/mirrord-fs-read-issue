@@ -11,17 +11,18 @@ My behaviour:
 When targeting multi-pod deployments, mirrord impersonates the first pod in the deployment.
 Support for multi-pod impersonation requires the mirrord operator, which is part of mirrord for Teams.
 To try it out, join the waitlist with `mirrord waitlist <email address>`, or at this link: https://metalbear.co/#waitlist-form
-⠁ mirrord exec
+⠂ mirrord exec
     ✓ Running on latest (3.72.1)!
     ✓ ready to launch process
       ✓ layer extracted
       ✓ no operator detected
       ✓ agent pod created
-      ✓ pod is ready                                                                                                                                                                                                                           Traceback (most recent call last):
-  File "/Users/vitali/Projects/mirrord-fs-read-issue/read.py", line 3, in <module>
-    print(os.listdir("/etc/"))
-          ^^^^^^^^^^^^^^^^^^^
-OSError: [Errno 22] Invalid argument: '/etc/'
+      ✓ pod is ready                                                                                                                                                                                                                           Listing root directory
+['/home', '/usr', '/bin', '/sbin', '/etc', '/var', '/Library', '/System', '/private', '/Users', '/Applications', '/opt', '/dev', '/Volumes', '/tmp', '/cores']
+------
+Listing /etc directory
+------
+[]
 ```
 
 Expected behaviour
