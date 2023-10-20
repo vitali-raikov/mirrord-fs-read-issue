@@ -1,6 +1,6 @@
 # Reproducing mirrord FS issues
 
-1. Create a `kind` cluster, I ran it with a latest version and still experienced problem
+1. Create a `kind` cluster, by running `kind create cluster` I ran it with a latest version and still experienced problem
 2. Apply k8s manifest `kubectl apply -f nginx-deployment`
 3. Run a mirrord exec `mirrord exec -f .mirrord/mirrord.json python3 read.py`
 
